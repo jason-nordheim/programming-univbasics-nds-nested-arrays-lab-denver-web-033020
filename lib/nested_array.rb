@@ -32,12 +32,13 @@ def sorted_matrix
   sorted_organic = ORGANIC_PRODUCE.sort
   sorted_conventional = CONVENTIONAL_PRODUCE.sort
   sorted_matrix = [sorted_organic, sorted_conventional]
-  return sorted_matrix 
+  return sorted_matrix
 end
 
 def matrix_lookup(matrix, row, column)
   # Given any matrix (array of arrays), a row index and a column index,
   # Return the matrix's content at that row and and column
+  return matrix[row,column] 
 end
 
 def matrix_update(matrix, row, column, new_value)
